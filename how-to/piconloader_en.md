@@ -39,10 +39,10 @@ The following instructions use the archive of version 1.0.3 for example. The ver
 
 The archive file can be transferred to the receiver using the free and open-source *PSCP* tool (`pscp.exe`) which can be downloaded [here](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html).
 
-Let's assume the archive `piconloader-1.0.3.tar` is located inside `C:\vu` on the local hard disk and the receiver has the IP address `192.168.1.1`. The corresponding command would look like this:
+Let's assume the archive `piconloader-1.0.3.tar` is located inside `C:\VuDuo2` on the local hard disk and the receiver has the IP address `192.168.1.1`. The corresponding command would look like this:
 
 ```
-pscp.exe -scp C:\vu\piconloader-1.0.3.tar root@192.168.1.1:/media/hdd/
+pscp.exe -scp C:\VuDuo2\piconloader-1.0.3.tar root@192.168.1.1:/media/hdd/
 ```
 
 When using paths containing spaces, the path must be enclosed with double quotes (`"`), for example:

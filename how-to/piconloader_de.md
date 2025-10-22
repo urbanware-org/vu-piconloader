@@ -39,10 +39,10 @@ Hier in der Anleitung wird das Archiv von Version 1.0.3 verwendet. Die Versionsn
 
 Das Archiv kann mittels dem [hier](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) erhältlichen, kostenlosen und quelloffenen Tool *PSCP* (`pscp.exe`) auf den Receiver übertragen werden.
 
-Wenn sich das Archiv im Verzeichnis `C:\vu` befindet und der Receiver die IP-Adresse `192.168.1.1` hat, würde der Befehl wie folgt aussehen:
+Wenn sich das Archiv im Verzeichnis `C:\VuDuo2` befindet und der Receiver die IP-Adresse `192.168.1.1` hat, würde der Befehl wie folgt aussehen:
 
 ```
-pscp.exe -scp C:\vu\piconloader-1.0.3.tar root@192.168.1.1:/media/hdd/
+pscp.exe -scp C:\VuDuo2\piconloader-1.0.3.tar root@192.168.1.1:/media/hdd/
 ```
 
 Falls der Pfad Leerzeichen enthält muss dieser in Anführungszeichen (`"`) stehen:
