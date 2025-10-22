@@ -1,4 +1,4 @@
-# *PiconLoader*
+# *Vu-PiconLoader*
 
 **Table of contents**
 *   [Preface](#preface)
@@ -15,7 +15,7 @@ It was developed on a *Vu+ Duo2* satellite receiver, but may also work on other 
 
 This project is distributed under the [MIT license](https://opensource.org/licenses/MIT), which can also be found inside the `LICENSE` file.
 
-Installing and configuring *PiconLoader*, requires fundamental experience with *Linux*, its shell and the *vi* editor (not *Vim*, as it is not available on the system) for modifying files.
+Installing and configuring *Vu-PiconLoader*, requires fundamental experience with *Linux*, its shell and the *vi* editor (not *Vim*, as it is not available on the system) for modifying files.
 
 Notice that the improper use of shell commands as well as well as modifying certain files may cause data loss or even corrupt your system! Due to this, you have to be careful and understand what you are doing ("think before you type").
 
@@ -25,13 +25,13 @@ The corresponding picon names for the channels can be determined with the *dream
 
 Please do not ask me any questions about the satellite receiver itself or the *dreamboxEDIT* software, as I neither own such a device nor have I used this software myself.
 
-[Top](#piconloader)
+[Top](#vu-piconloader)
 
 ## Installation
 
 ### Copy the archive file to the receiver
 
-First of all, the archive containing the *PiconLoader* must be copied to the receiver.
+First of all, the archive containing the *Vu-PiconLoader* must be copied to the receiver.
 
 The following instructions use the archive of version 1.0.3 for example. The version number is part of the archive file name. When installing a newer version, the file name in the commands must be adjusted, of course.
 
@@ -113,7 +113,7 @@ chmod +x ./piconloader/piconloader.sh
 
 ### Add the required cronjob
 
-The *PiconLoader* script must be triggered every minute using a cronjob (using init scripts did not work before). Running the script does not affect the performance of the device, neither when watching TV nor when doing HD recordings.
+The *Vu-PiconLoader* script must be triggered every minute using a cronjob (using init scripts did not work before). Running the script does not affect the performance of the device, neither when watching TV nor when doing HD recordings.
 
 Edit the `/etc/cron/crontab/root` crontab file
 
@@ -135,11 +135,11 @@ The cronjob should already be applied after modifying the crontab file, but you 
 crontab /etc/cron/crontabs/root
 ```
 
-[Top](#piconloader)
+[Top](#vu-piconloader)
 
 ## Usage examples
 
-Notice that *PiconLoader* uses the 24-hour time format. So, for example, 4 PM is equal to 16:00 h.
+Notice that *Vu-PiconLoader* uses the 24-hour time format. So, for example, 4 PM is equal to 16:00 h.
 
 Let's assume the channel *FooTV* is on from 6:30 AM (06:30 h) to 8:00 PM (20:00 h) and outside this time, *BarTV* is.
 
@@ -197,5 +197,5 @@ For example, to change a picon on January, 3rd, the picon file must be copied in
 
 To monthly change a picon, in January the corresponding sub-directory would be `./monthly/01`.
 
-[Top](#piconloader)
+[Top](#vu-piconloader)
 

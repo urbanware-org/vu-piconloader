@@ -1,4 +1,4 @@
-# *PiconLoader*
+# *Vu-PiconLoader*
 
 **Inhaltsverzeichnis**
 *   [Vorwort](#vorwort)
@@ -13,7 +13,7 @@ Dieses Skript habe ich für meinen Kumpel geschrieben, da er mich fragte, ob es 
 
 Das Skript wurde auf einem *Vu+ Duo2*-Receiver entwickelt, könnte jedoch auch auf verwandten Systemen laufen, aber das habe ich nicht getestet. Der Code dahinter ist nicht gerade der schönste, aber er funktioniert und kann logischerweise noch verbessert sowie erweitert werden.
 
-Das *PiconLoader*-Projekt steht unter der [MIT-Lizenz](https://opensource.org/licenses/MIT). Diese kann auch der Datei `LICENSE` entnommen werden.
+Das *Vu-PiconLoader*-Projekt steht unter der [MIT-Lizenz](https://opensource.org/licenses/MIT). Diese kann auch der Datei `LICENSE` entnommen werden.
 
 Die Installation und Konfiguration setzt grundlegende Erfahrung mit *Linux*, dessen Shell sowie dem *vi*-Editor (nicht *Vim*, nachdem dieser auf dem Gerät nicht verfügbar ist) um Dateien zu bearbeiten.
 
@@ -25,13 +25,13 @@ Die entsprechenden Namen (die so genannten "Kanalreferenzen") für die jeweilige
 
 Fragen zum Receiver selbst oder zur *dreamboxEDIT*-Software kann ich nicht beantworten, da ich weder ein solches Gerät besitze noch diese Software selbst verwendet habe.
 
-[Seitenanfang](#piconloader)
+[Seitenanfang](#vu-piconloader)
 
 ## Installation
 
 ### Archiv auf die Festplatte im Receiver kopieren
 
-Zunächst muss Archiv, in dem sich der PiconLoader befindet, auf den Receiver kopiert werden.
+Zunächst muss Archiv, in dem sich der *Vu-PiconLoader* befindet, auf den Receiver kopiert werden.
 
 Hier in der Anleitung wird das Archiv von Version 1.0.3 verwendet. Die Versionsnummer ist ein Teil des Dateinamens. Wird eine andere Version installiert muss der Dateiname in den Befehlen entsprechend angepasst werden.
 
@@ -135,7 +135,7 @@ crontab /etc/cron/crontabs/root
 
 kann dies auch manuell durchgeführt werden.
 
-[Seitenanfang](#piconloader)
+[Seitenanfang](#vu-piconloader)
 
 ## Verwendung
 
@@ -159,7 +159,7 @@ Somit sieht es wie folgt aus:
 
 Beide Picons müssen auf den Receiver in `/media/hdd/` kopiert werden (mittels `scp` oder `pscp.exe`).
 
-Danach in der SSH-Sitzung auf den Receiver in das Verzeichnis von *PiconLoader* wechseln
+Danach in der SSH-Sitzung auf den Receiver in das Verzeichnis von *Vu-PiconLoader* wechseln
 
 ```
 cd /media/hdd/piconloader
@@ -194,4 +194,4 @@ Um beispielsweise ein Picon am 3. Januar auszutauschen, muss die Picon-Datei in 
 
 Für einen monatlichen Austausch, beispielsweise Januar, lautet der Verzeichnisname `./monthly/01`.
 
-[Seitenanfang](#piconloader)
+[Seitenanfang](#vu-piconloader)
