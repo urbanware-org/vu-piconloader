@@ -1,13 +1,13 @@
 #!/bin/sh
 
-# ============================================================================
-# PiconLoader - Vu+ Duo2 picon loader
+#
+# Vu-PiconLoader - Vu+ Duo2 picon loader
 # Copyright (C) 2018 by Ralf Kilian
 # Distributed under the MIT License (https://opensource.org/licenses/MIT)
 #
-# GitHub: https://github.com/urbanware-org/piconloader
-# GitLab: https://gitlab.com/urbanware-org/piconloader
-# ============================================================================
+# GitHub: https://github.com/urbanware-org/vu-piconloader
+# GitLab: https://gitlab.com/urbanware-org/vu-piconloader
+#
 
 version="1.0.3"
 
