@@ -4,8 +4,8 @@
 
 The documentation is available in the following languages:
 
-*   :de: [German](piconloader_de.md)
-*   :us: [English](piconloader_en.md)
+*   :de: [German](vu-piconloader_de.md)
+*   :us: [English](vu-piconloader_en.md)
 
 # Archived documentation
 
