@@ -33,32 +33,32 @@ Please do not ask me any questions about the satellite receiver itself or the *d
 
 First of all, the archive containing the *Vu-PiconLoader* must be copied to the receiver.
 
-The following instructions use the archive of version 1.0.3 for example. The version number is part of the archive file name. When installing a newer version, the file name in the commands must be adjusted, of course.
+The following instructions use the archive of version 1.0.4 for example. The version number is part of the archive file name. When installing a newer version, the file name in the commands must be adjusted, of course.
 
 #### *Windows* systems
 
 The archive file can be transferred to the receiver using the free and open-source *PSCP* tool (`pscp.exe`) which can be downloaded [here](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html).
 
-Let's assume the archive `piconloader-1.0.3.tar` is located inside `C:\VuDuo2` on the local hard disk and the receiver has the IP address `192.168.1.1`. The corresponding command would look like this:
+Let's assume the archive `vu-piconloader-1.0.4.tar` is located inside `C:\VuDuo2` on the local hard disk and the receiver has the IP address `192.168.1.1`. The corresponding command would look like this:
 
 ```
-pscp.exe -scp C:\VuDuo2\piconloader-1.0.3.tar root@192.168.1.1:/media/hdd/
+pscp.exe -scp C:\VuDuo2\vu-piconloader-1.0.4.tar root@192.168.1.1:/media/hdd/
 ```
 
 When using paths containing spaces, the path must be enclosed with double quotes (`"`), for example:
 
 ```
-pscp.exe -scp "C:\Users\John Doe\Downloads\piconloader-1.0.3.tar" root@192.168.1.1:/media/hdd/
+pscp.exe -scp "C:\Users\John Doe\Downloads\vu-piconloader-1.0.4.tar" root@192.168.1.1:/media/hdd/
 ```
 
 #### *Unix*-like systems (*Linux*, *BSD*, *MacOSX*)
 
 Usually, these operating systems already include the `scp` command for transferring files.
 
-Let's assume the archive `piconloader-1.0.3.tar` is located inside the `/home/user/Downloads` directory on the local hard disk and the receiver has the IP address `192.168.1.1`. The corresponding command would look like as follows:
+Let's assume the archive `vu-piconloader-1.0.4.tar` is located inside the `/home/user/Downloads` directory on the local hard disk and the receiver has the IP address `192.168.1.1`. The corresponding command would look like as follows:
 
 ```
-scp /home/user/Downloads/piconloader-1.0.3.tar root@192.168.1.1:/media/hdd/
+scp /home/user/Downloads/vu-piconloader-1.0.4.tar root@192.168.1.1:/media/hdd/
 ```
 
 ### Connect to the device via SSH
@@ -90,15 +90,15 @@ cd /media/hdd
 Inside this directory you can find the transferred archive and extract it as follows.
 
 ```
-tar xvf piconloader-1.0.3.tar
+tar xvf vu-piconloader-1.0.4.tar
 ```
 
-After that, the directory `/media/hdd/piconloader` will be created which contains the relevant files as well as some empty sub-directories.
+After that, the directory `/media/hdd/vu-piconloader` will be created which contains the relevant files as well as some empty sub-directories.
 
 The archive file can now be deleted again:
 
 ```
-rm piconloader-1.0.3.tar
+rm vu-piconloader-1.0.4.tar
 ```
 
 ### Set the executable flag
@@ -108,7 +108,7 @@ In order to use the script, it must be executable. This should already be the ca
 If the script already is executable and you run following command anyway, it will have no effect.
 
 ```
-chmod +x ./piconloader/piconloader.sh
+chmod +x ./vu-piconloader/vu-piconloader.sh
 ```
 
 ### Add the required cronjob
@@ -124,7 +124,7 @@ vi /etc/cron/crontabs/root
 and add the following line.
 
 ```
-* * * * * sh /media/hdd/piconloader/piconloader.sh
+* * * * * sh /media/hdd/vu-piconloader/vu-piconloader.sh
 ```
 
 When done, save and close the file.
@@ -162,10 +162,10 @@ Now there is the following situation:
 
 Copy both picons into `/media/hdd/` on the receiver (using `scp` or `pscp.exe`).
 
-Back in the SSH session, switch to the `piconloader` directory:
+Back in the SSH session, switch to the `vu-piconloader` directory:
 
 ```
-cd /media/hdd/piconloader
+cd /media/hdd/vu-piconloader
 ```
 
 Then, create the two directories for both times inside the `qhourly` sub-directory as follows. Notice that you have to use hyphens (`-`) instead of colons (`:`) usually used as time seperators, as colons are not supported in file or directory names on *FAT32* and *NTFS* file systems.

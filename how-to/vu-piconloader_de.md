@@ -33,7 +33,7 @@ Fragen zum Receiver selbst oder zur *dreamboxEDIT*-Software kann ich nicht beant
 
 Zunächst muss Archiv, in dem sich der *Vu-PiconLoader* befindet, auf den Receiver kopiert werden.
 
-Hier in der Anleitung wird das Archiv von Version 1.0.3 verwendet. Die Versionsnummer ist ein Teil des Dateinamens. Wird eine andere Version installiert muss der Dateiname in den Befehlen entsprechend angepasst werden.
+Hier in der Anleitung wird das Archiv von Version 1.0.4 verwendet. Die Versionsnummer ist ein Teil des Dateinamens. Wird eine andere Version installiert muss der Dateiname in den Befehlen entsprechend angepasst werden.
 
 #### Auf *Windows*-Systemen
 
@@ -42,13 +42,13 @@ Das Archiv kann mittels dem [hier](https://www.chiark.greenend.org.uk/~sgtatham/
 Wenn sich das Archiv im Verzeichnis `C:\VuDuo2` befindet und der Receiver die IP-Adresse `192.168.1.1` hat, würde der Befehl wie folgt aussehen:
 
 ```
-pscp.exe -scp C:\VuDuo2\piconloader-1.0.3.tar root@192.168.1.1:/media/hdd/
+pscp.exe -scp C:\VuDuo2\vu-piconloader-1.0.4.tar root@192.168.1.1:/media/hdd/
 ```
 
 Falls der Pfad Leerzeichen enthält muss dieser in Anführungszeichen (`"`) stehen:
 
 ```
-pscp.exe -scp "C:\Users\John Doe\Downloads\piconloader-1.0.3.tar" root@192.168.1.1:/media/hdd/
+pscp.exe -scp "C:\Users\John Doe\Downloads\vu-piconloader-1.0.4.tar" root@192.168.1.1:/media/hdd/
 ```
 
 #### Auf *Unix*-ähnlichen Systemen (*Linux*, *BSD*, *MacOSX*)
@@ -58,7 +58,7 @@ Diese Systeme stellen in der Regel bereits von Haus aus den `scp` Befehl für da
 Wenn sich das Archiv im Verzeichnis `/home/user/Downloads` befindet und der Receiver die IP-Adresse `192.168.1.1` hat, würde der Befehl wie folgt aussehen:
 
 ```
-scp /home/user/Downloads/piconloader-1.0.3.tar root@192.168.1.1:/media/hdd/
+scp /home/user/Downloads/vu-piconloader-1.0.4.tar root@192.168.1.1:/media/hdd/
 ```
 
 ### Mittels SSH auf den Receiver verbinden
@@ -90,15 +90,15 @@ cd /media/hdd
 Dort liegt das kopierte Archiv. Mit dem folgenden Befehl wird dieses entpackt.
 
 ```
-tar xvf piconloader-1.0.3.tar
+tar xvf vu-piconloader-1.0.4.tar
 ```
 
-Danach existiert das Verzeichnis ```/media/hdd/piconloader```, welches die relevanten Dateien und leere Unterordner enthält.
+Danach existiert das Verzeichnis ```/media/hdd/vu-piconloader```, welches die relevanten Dateien und leere Unterordner enthält.
 
 Das Archiv selbst kann nun wieder gelöscht werden:
 
 ```
-rm piconloader-1.0.3.tar
+rm vu-piconloader-1.0.4.tar
 ```
 
 ### Skript als ausführbar markieren
@@ -108,7 +108,7 @@ Damit das Skript auch ausgeführt werden kann ist es erforderlich, diesses als a
 Wenn das Skript schon als ausführbar markiert ist und man dennoch den folgenden Befehl ausführt hat dies keinerlei Auswirkungen bzw. Folgen.
 
 ```
-chmod +x ./piconloader/piconloader.sh
+chmod +x ./vu-piconloader/vu-piconloader.sh
 ```
 
 ### Cronjob einrichten
@@ -124,7 +124,7 @@ vi /etc/cron/crontabs/root
 In dieser muss lediglich folgende Zeile eingefügt
 
 ```
-* * * * * sh /media/hdd/piconloader/piconloader.sh
+* * * * * sh /media/hdd/vu-piconloader/vu-piconloader.sh
 ```
 
 und dann die Datei gespeichert (sowie geschlossen) werden. Damit sollte der Cronjob direkt aktiv werden. Mittels dem Befehl
@@ -162,7 +162,7 @@ Beide Picons müssen auf den Receiver in `/media/hdd/` kopiert werden (mittels `
 Danach in der SSH-Sitzung auf den Receiver in das Verzeichnis von *Vu-PiconLoader* wechseln
 
 ```
-cd /media/hdd/piconloader
+cd /media/hdd/vu-piconloader
 ```
 
 und zwei neue Verzeichnisse im Unterverzeichnis `qhourly` erstellen. Bei Zeitangaben ist es erforderlich Bindestriche (`-`) statt wie üblich Doppelpunkte (`:`) als Trennzeichen zu verwenden, da Doppelpunkte bei *FAT32*- und *NTFS*-Dateisystemen nicht erlaubt sind.
