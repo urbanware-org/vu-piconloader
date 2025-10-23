@@ -61,14 +61,14 @@ loop_hours() {
         fi
 
         for qhour in $(seq 0 3); do
-            if [ $qhour == 0 ]; then
+            if [ $qhour -eq 0 ]; then
                 minutes=00
             else
                 temp=$(( 15 * qhour ))
                 minutes=$temp
             fi
 
-            if [ $hour == $current_hour ]; then
+            if [ $hour -eq $current_hour ]; then
                 if [ $minutes -gt $current_min ]; then
                     break
                 fi
@@ -92,7 +92,7 @@ copy_picons() {
 
 if [ -e "$file_temp" ]; then
     for min in 00 15 30 45; do
-        if [ $current_min == $min ]; then
+        if [ $current_min -eq $min ]; then
             check_monthly
             check_qhourly
         fi
