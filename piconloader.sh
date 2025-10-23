@@ -9,7 +9,7 @@
 # GitLab: https://gitlab.com/urbanware-org/vu-piconloader
 #
 
-version="1.0.3"
+version="1.0.4"
 
 dir_source=$(dirname $(readlink -f ${0}))
 dir_daily="${dir_source}/daily"
