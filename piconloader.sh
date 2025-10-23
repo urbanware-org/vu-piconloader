@@ -16,7 +16,7 @@ dir_daily="${dir_source}/daily"
 dir_monthly="${dir_source}/monthly"
 dir_qhourly="${dir_source}/qhourly"
 dir_target="/usr/share/enigma2/picon"
-file_temp="/tmp/piconloader.tmp"
+file_temp="/tmp/vu-piconloader.tmp"
 
 current_month=$(date "+%m")
 current_day=$(date "+%d")
