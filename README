@@ -20,9 +20,18 @@ README (Vu-PiconLoader)
         The Vu-PiconLoader script changes the corresponding picons at a user-
         defined day, month or (quarter) hour.
 
-        This project has been developed and tested on a Vu+ Duo2 satellite
-        receiver, but should also work on similar devices. However, there is
-        no guarantee for that.
+        It has been developed and tested on a Vu+ Duo2 satellite receiver, but
+        should also work on similar devices. However, there is no guarantee
+        for that.
+
+        This project was officially discontinued as of October 2025 and is no
+        longer maintained.
+
+    Project name
+
+        The name of the project was changed to Vu-PiconLoader (formerly just
+        PiconLoader) for more clarity and to directly refer to the satellite
+        receiver.
 
     Important notice
 
@@ -31,8 +40,8 @@ README (Vu-PiconLoader)
         tool and with the receiver itself, of course. Otherwise, following the
         instructions of the how-to does not make any sense.
 
-        You should also be aware of the fact that running commands on the
-        shell of the device can lead to data loss, system crashes or even
+        You should also be aware of the fact that running certain commands on
+        the shell of the device can lead to data loss, system crashes or even
         cause that the device does not boot anymore. Use at own risk.
 
     Installation
@@ -41,14 +50,16 @@ README (Vu-PiconLoader)
 
     Contact
 
-        If you have any suggestions, questions, bugs to report or feedback to
-        give about the script let me know.
-
         Please do not ask me any questions about the satellite receiver itself
         or the dreamboxEDIT software, as I neither own such a device nor have
         I used this software myself.
 
-        You can contact me by sending an email to <dev@urbanware.org>.
+        As mentioned above, this project was discontinued. For this reason, no
+        new features will be implemented, existing features will not be
+        enhanced and remaining bugs will not be fixed either.
+
+        However, if you have questions about it, you can contact me by sending
+        an email to <dev@urbanware.org>.
 
         Due to the fact, that my projects are spare time projects, the email
         account is not being checked for mails regularly, but usually at least
